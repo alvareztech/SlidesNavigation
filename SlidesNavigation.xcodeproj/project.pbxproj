@@ -21,6 +21,10 @@
 		4E4447D8193669E6000A2066 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4447BA193669E6000A2066 /* UIKit.framework */; };
 		4E4447E0193669E6000A2066 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E4447DE193669E6000A2066 /* InfoPlist.strings */; };
 		4E4447E2193669E6000A2066 /* SlidesNavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4447E1193669E6000A2066 /* SlidesNavigationTests.m */; };
+		4E4447EE19366A21000A2066 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4447ED19366A21000A2066 /* MenuViewController.m */; };
+		4E4447F119366A82000A2066 /* ItemMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4447F019366A82000A2066 /* ItemMenuViewController.m */; };
+		4E4447F519366AAC000A2066 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4447F419366AAC000A2066 /* NewsViewController.m */; };
+		4E4447F819366ABA000A2066 /* ItemNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4447F719366ABA000A2066 /* ItemNewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		4E4447DD193669E6000A2066 /* SlidesNavigationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlidesNavigationTests-Info.plist"; sourceTree = "<group>"; };
 		4E4447DF193669E6000A2066 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4E4447E1193669E6000A2066 /* SlidesNavigationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidesNavigationTests.m; sourceTree = "<group>"; };
+		4E4447EC19366A21000A2066 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Controllers/MenuViewController.h; sourceTree = "<group>"; };
+		4E4447ED19366A21000A2066 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Controllers/MenuViewController.m; sourceTree = "<group>"; };
+		4E4447EF19366A82000A2066 /* ItemMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemMenuViewController.h; sourceTree = "<group>"; };
+		4E4447F019366A82000A2066 /* ItemMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemMenuViewController.m; sourceTree = "<group>"; };
+		4E4447F319366AAC000A2066 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = Controllers/NewsViewController.h; sourceTree = "<group>"; };
+		4E4447F419366AAC000A2066 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = Controllers/NewsViewController.m; sourceTree = "<group>"; };
+		4E4447F619366ABA000A2066 /* ItemNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemNewsViewController.h; path = Controllers/ItemNewsViewController.h; sourceTree = "<group>"; };
+		4E4447F719366ABA000A2066 /* ItemNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemNewsViewController.m; path = Controllers/ItemNewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		4E4447BC193669E6000A2066 /* SlidesNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				4E4447EB193669F6000A2066 /* Controllers */,
 				4E4447C5193669E6000A2066 /* AppDelegate.h */,
 				4E4447C6193669E6000A2066 /* AppDelegate.m */,
 				4E4447C8193669E6000A2066 /* Main.storyboard */,
@@ -150,6 +163,29 @@
 				4E4447DE193669E6000A2066 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E4447EB193669F6000A2066 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E4447F219366A8B000A2066 /* News */,
+				4E4447EC19366A21000A2066 /* MenuViewController.h */,
+				4E4447ED19366A21000A2066 /* MenuViewController.m */,
+				4E4447EF19366A82000A2066 /* ItemMenuViewController.h */,
+				4E4447F019366A82000A2066 /* ItemMenuViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4E4447F219366A8B000A2066 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				4E4447F319366AAC000A2066 /* NewsViewController.h */,
+				4E4447F419366AAC000A2066 /* NewsViewController.m */,
+				4E4447F619366ABA000A2066 /* ItemNewsViewController.h */,
+				4E4447F719366ABA000A2066 /* ItemNewsViewController.m */,
+			);
+			name = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4447CD193669E6000A2066 /* ViewController.m in Sources */,
+				4E4447F819366ABA000A2066 /* ItemNewsViewController.m in Sources */,
 				4E4447C7193669E6000A2066 /* AppDelegate.m in Sources */,
+				4E4447F119366A82000A2066 /* ItemMenuViewController.m in Sources */,
+				4E4447F519366AAC000A2066 /* NewsViewController.m in Sources */,
 				4E4447C3193669E6000A2066 /* main.m in Sources */,
+				4E4447EE19366A21000A2066 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
